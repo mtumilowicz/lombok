@@ -10,11 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class MethodReturnTest {
     @Test
     void nonNullReturn_null() {
-        assertThrows(IllegalStateException.class, () -> MethodReturn.nonNullReturn(null));
+        assertThrows(IllegalStateException.class, MethodReturn::nullReturn);
     }
 
     @Test
     void nonNullReturn_nonNull() {
-        assertDoesNotThrow(() -> MethodReturn.nonNullReturn("a"));
+        assertDoesNotThrow(MethodReturn::nonNullReturn);
     }
 }

@@ -7,7 +7,12 @@ import lombok.NonNull;
  */
 class MethodReturn {
     @NonNull
-    static String nonNullReturn(String param) {
-        return param;
+    static String nonNullReturn() {
+        return "a";
+    }
+
+    @NonNull
+    static String nullReturn() {
+        return null;
     }
 }
