@@ -52,12 +52,13 @@
         }
     }
     ```
-    Note that no-arg constructor does not have validation.
+    **Note** that no-arg constructor does not have validation.
      
     If we don't use lombok generated constructors / methods, there is no difference
-    in compiled class.
+    in the compiled class.
     
 * over method / local variable
+
     Adding `@NonNull` over method / local variable do nothing apart of 
     marking.
     ```
