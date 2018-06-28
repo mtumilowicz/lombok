@@ -8,7 +8,7 @@ import lombok.experimental.FieldDefaults;
  */
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
+@AllArgsConstructor
 @FieldDefaults(level=AccessLevel.PRIVATE)
 class OverField {
     @NonNull
